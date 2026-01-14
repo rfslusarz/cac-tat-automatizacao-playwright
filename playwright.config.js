@@ -4,7 +4,10 @@ module.exports = defineConfig({
   testDir: './tests/e2e',
   timeout: 30 * 1000,
   retries: 0,
-  reporter: [['list']],
+  reporter: [
+    ['html', { outputFolder: 'playwright-report', open: 'never' }],
+    ['list']
+  ],
   use: {
     baseURL: 'https://cac-tat-v3.s3.eu-central-1.amazonaws.com',
     headless: true,
@@ -14,4 +17,3 @@ module.exports = defineConfig({
     locale: 'pt-BR'
   },
 });
-
