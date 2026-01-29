@@ -5,7 +5,7 @@ module.exports = defineConfig({
   timeout: 30 * 1000,
   retries: 0,
   reporter: [
-    ['html', { outputFolder: 'playwright-report', open: 'never' }],
+    ['html', { outputFolder: 'reports/html', open: 'never' }],
     ['list']
   ],
   use: {

@@ -1,3 +1,8 @@
+[![Playwright Tests](https://github.com/rfslusarz/cac-tat-automatizacao-playwright/actions/workflows/playwright.yml/badge.svg)](https://github.com/rfslusarz/cac-tat-automatizacao-playwright/actions/workflows/playwright.yml)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/docs/Web/JavaScript)
+[![Playwright](https://img.shields.io/badge/Playwright-2EAD33?logo=playwright&logoColor=white)](https://playwright.dev/)
+[![Node.js LTS](https://img.shields.io/badge/Node.js-LTS-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
+[![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-CI-2088FF?logo=githubactions&logoColor=white)](https://github.com/features/actions)
 # CAC TAT – Automação E2E com Playwright (JavaScript)
 
 ## Visão Geral
@@ -34,6 +39,9 @@ cac-tat-automacao-playwright/
 │   └── FormularioPage.js               # POM do formulário
 ├── utils/
 │   └── testData.js                     # Massa de dados fictícia
+├── reports/
+│   ├── html/                           # Relatórios HTML gerados pelo CI/CD
+│   └── exemplo-report.html             # Exemplo versionado
 ├── arquivo-teste.txt                   # Fixture de upload (.txt)
 ├── playwright.config.js
 ├── package.json
@@ -53,6 +61,16 @@ npm run test:headed
 ```bash
 npm run test:ui
 ```
+
+## CI/CD
+- Execução automática em push e pull request (GitHub Actions)
+- Node LTS, instalação de dependências e browsers do Playwright
+- Testes em modo headless e publicação do relatório HTML em GitHub Pages
+- Artefatos de relatório disponíveis no job do workflow
+
+## Relatório Público (GitHub Pages)
+- Acesse o relatório publicado: https://rfslusarz.github.io/cac-tat-automatizacao-playwright/
+- Exemplo versionado: [exemplo-report.html](reports/exemplo-report.html)
 
 ## Cenários Cobertos
 ### Positivos
@@ -85,4 +103,3 @@ npm run test:ui
 - Adicionar reports HTML e Allure
 - Cobrir validações de máscara de telefone e produto
 - Pipeline CI (GitHub Actions/Azure DevOps)
-
