@@ -10,25 +10,6 @@
 - Foco em validação de campos obrigatórios, regras de negócio e cenários positivos/negativos.
 - Projeto pronto para uso em portfólio profissional.
 
-## Aplicação Testada
-- URL: https://cac-tat-v3.s3.eu-central-1.amazonaws.com/index.html
-- Formulário com campos: Nome, Sobrenome, E-mail, Telefone (condicional), Produto (select), Tipo de atendimento (radio), Meio de contato (checkbox), Mensagem (textarea), Upload de arquivo e botão Enviar.
-
-## Tecnologias
-- Linguagem: JavaScript
-- Framework: Playwright (@playwright/test)
-- Padrão: Page Object Model (POM)
-
-## Pré-requisitos
-- Node.js LTS instalado
-- Acesso à internet para baixar browsers do Playwright
-
-## Instalação
-```bash
-npm i
-npx playwright install
-```
-
 ## Estrutura de Pastas
 ```
 cac-tat-automacao-playwright/
@@ -46,6 +27,25 @@ cac-tat-automacao-playwright/
 ├── playwright.config.js
 ├── package.json
 └── README.md
+```
+
+## Aplicação Testada
+- URL: https://cac-tat-v3.s3.eu-central-1.amazonaws.com/index.html
+- Formulário com campos: Nome, Sobrenome, E-mail, Telefone (condicional), Produto (select), Tipo de atendimento (radio), Meio de contato (checkbox), Mensagem (textarea), Upload de arquivo e botão Enviar.
+
+## Tecnologias
+- Linguagem: JavaScript
+- Framework: Playwright (@playwright/test)
+- Padrão: Page Object Model (POM)
+
+## Pré-requisitos
+- Node.js LTS instalado
+- Acesso à internet para baixar browsers do Playwright
+
+## Instalação
+```bash
+npm i
+npx playwright install
 ```
 
 ## Executando os Testes
